@@ -9,5 +9,11 @@
     "resolveJsonModule": true,
     "outDir": "./build"
   },
-  "include": ["./src/**/*.ts", "./test/**/*.ts"]
+  "ts-node": {
+    "esm": true,
+    "compilerOptions": {
+      "module": "nodenext"
+    }
+  },
+  "include": ["eslint.config.js", "./src/**/*.ts", "./test/**/*.ts"]
 }

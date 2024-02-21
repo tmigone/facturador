@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint . --fix"
   },
   "author": "Tomás Migone <tomasmigone@gmail.com>",
   "license": "MIT",
@@ -15,7 +15,12 @@
     "eslint": "^8.56.0",
     "eslint-plugin-no-only-tests": "^3.1.0",
     "eslint-plugin-no-secrets": "^0.8.9",
+    "ts-node": "^10.9.2",
     "typescript": "^5.3.3",
     "typescript-eslint": "^7.0.2"
+  },
+  "dependencies": {
+    "@commander-js/extra-typings": "^12.0.0",
+    "commander": "^12.0.0"
   }
 }
