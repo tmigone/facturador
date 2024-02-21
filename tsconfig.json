@@ -13,7 +13,8 @@
     "esm": true,
     "compilerOptions": {
       "module": "nodenext"
-    }
+    },
+    "experimentalSpecifierResolution": "node"
   },
   "include": ["eslint.config.js", "./src/**/*.ts", "./test/**/*.ts"]
 }

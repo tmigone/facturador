@@ -1,10 +1,10 @@
-import { program } from '@commander-js/extra-typings'
+import { Command } from '@commander-js/extra-typings'
 
-program.command('print')
-  .argument('<file>')
-  .option('--double-sided')
-  .action((args) => {
-    console.log(args)
-  })
+import generateCertificate from './commands/generate-certificate'
+
+const program = new Command()
+  .name('afip')
+  .description('CLI tool for AFIP SDK')
+program.addCommand(generateCertificate)
 
 program.parse()
