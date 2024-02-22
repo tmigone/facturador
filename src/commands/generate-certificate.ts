@@ -11,6 +11,8 @@ import { confirm } from '@inquirer/prompts'
 
 const program = new Command()
   .command('generate-certificate')
+  .description('Generate certificate to use AFIP webservices')
+  .summary('Generate certificate')
   .requiredOption('-c, --cuit <cuit>', 'CUIT o CUIL del usuario')
   .requiredOption('-p, --password <password>', 'Clave fiscal del usuario')
   .action(async (args) => {
